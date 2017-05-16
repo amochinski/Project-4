@@ -1,0 +1,97 @@
+body {
+  overflow-x: hidden;
+  background-color: skyblue;
+}
+
+.sky {
+  height: 91%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.sky .cloud {
+  background: #ebf5fc;
+  border-radius: 200px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  height: 39px;
+  margin-right: -102px;
+  position: absolute;
+  right: 0%;
+  width: 102px;
+}
+.sky .cloud.variant-1 {
+  top: 52%;
+  -webkit-transform: scale(0.2);
+  -webkit-animation: clouds-in-out 16s 0s infinite linear;
+}
+.sky .cloud.variant-2 {
+  top: 39%;
+  -webkit-transform: scale(0.4);
+  -webkit-animation: clouds-in-out 17s 2s infinite linear;
+}
+.sky .cloud.variant-3 {
+  top: 19%;
+  -webkit-transform: scale(0.6);
+  -webkit-animation: clouds-in-out 18s 4s infinite linear;
+}
+.sky .cloud.variant-4 {
+  top: 5%;
+  -webkit-transform: scale(0.8);
+  -webkit-animation: clouds-in-out 19s 6s infinite linear;
+}
+.sky .cloud.variant-5 {
+  top: 70%;
+  -webkit-transform: scale(1);
+  -webkit-animation: clouds-in-out 20s 8s infinite linear;
+}
+.sky .cloud.variant-6 {
+  top: 25%;
+  -webkit-transform: scale(1);
+  -webkit-animation: clouds-in-out 17s 1s infinite linear;
+}
+.sky .cloud.variant-7 {
+  top: 66%;
+  -webkit-transform: scale(0.8);
+  -webkit-animation: clouds-in-out 18s 5s infinite linear;
+}
+.sky .cloud.variant-8 {
+  top: 43%;
+  -webkit-transform: scale(0.6);
+  -webkit-animation: clouds-in-out 18s 7s infinite linear;
+}
+.sky .cloud.variant-9 {
+  top: 30%;
+  -webkit-transform: scale(0.4);
+  -webkit-animation: clouds-in-out 19s 8s infinite linear;
+}
+.sky .cloud.variant-10 {
+  top: 47%;
+  -webkit-transform: scale(0.2);
+  -webkit-animation: clouds-in-out 21s 9s infinite linear;
+}
+
+.sky .cloud:before, .sky .cloud:after {
+  background: #ebf5fc;
+  border-radius: 100px;
+  content: '';
+  height: 45px;
+  left: 10px;
+  position: absolute;
+  top: -10px;
+  width: 60px;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+.sky .cloud:after {
+  height: 60px;
+  left: auto;
+  right: 12px;
+  top: -24px;
+  width: 60px;
+}
+
+@-webkit-keyframes clouds-in-out {
+  0% {right: 0%;}
+  100% {right: 105%;}
+}

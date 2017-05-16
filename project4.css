@@ -1,0 +1,22 @@
+/* To get fonts from google */
+@import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
+
+body{font-family: 'Architects Daughter', cursive;}
+
+/* To get text alignment, color, and padding the top for header 2*/
+h2 {
+	text-align: center;
+	color: hotpink;
+	padding-top: 20px;
+}
+
+/* To get the font size for the header */
+nav ul a { font-size: 1.5rem;}
+
+/* Resume Print */
+@media print {
+	#body{ background-color:#FFFFFF; background-image:none; color:#000000;}
+  	#header{ display:none;}
+  	#footer{ display:none;}
+  	#resume{ width:100%;}
+}
